@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 07:01:53.845275",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mati_status",
+  "num_of_chil",
+  "any_sign",
+  "per_allerg"
+ ],
+ "fields": [
+  {
+   "fieldname": "mati_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Marital Status -  \u0627\u0644\u062d\u0627\u0644\u0629 \u0627\u0644\u0625\u062c\u062a\u0645\u0627\u0639\u064a\u0629",
+   "options": "\nSingle - \u0627\u0639\u0632\u0628\nMarried - \u0645\u062a\u0632\u0648\u062c\nDivorced - \u0645\u0637\u0644\u0642/\u0629\nWidowed - \u0627\u0631\u0645\u0644/\u0647"
+  },
+  {
+   "fieldname": "num_of_chil",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Number of Children - \u0639\u062f\u062f \u0627\u0644\u0623\u0628\u0646\u0627\u0621",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9"
+  },
+  {
+   "fieldname": "any_sign",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Any Significant Past Medical History -  \u0627\u0644\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0637\u0628\u064a \u0627\u0644\u0645\u0631\u0636\u064ad",
+   "options": "\nFree\nSurgery\nAccident\nPregnant"
+  },
+  {
+   "fieldname": "per_allerg",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Allergies -  \u0627\u0644\u062d\u0633\u0627\u0633\u064a\u0629",
+   "options": "\nNKDA\nPositive"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-05 14:40:40.074740",
+ "modified_by": "Administrator",
+ "module": "Lis Reports",
+ "name": "personal_history",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

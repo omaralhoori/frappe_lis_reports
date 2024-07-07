@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-05 15:48:36.058519",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "check_type",
+  "range_type",
+  "range1_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "check_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Check Type",
+   "options": "\nHeight - \u0627\u0644\u0637\u0648\u0644\nWeight -  \u0627\u0644\u0648\u0632\u0646\nBMI -  \u0645\u0624\u0634\u0631 \u0643\u062a\u0644\u0629 \u0627\u0644\u062c\u0633\u0645\nBlood Pressure -  \u0636\u063a\u0637 \u0627\u0644\u062f\u0645\nPulse -  \u0627\u0644\u0646\u0628\u0636\nENT\nRespiratory Rate\nChest \u0627\u0644\u0635\u062f\u0631\nHeart \u0627\u0644\u0642\u0644\u0628\nAbdomen \u0627\u0644\u0628\u0637\u0646\nECG & Cardiac Assessment\nMusculoskeletal Assessment\nCVS Assessment\nSkin Health Assessment\nVibration Health Check"
+  },
+  {
+   "fieldname": "range_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Range / Type"
+  },
+  {
+   "fieldname": "range1_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Range / Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-06 03:42:57.785755",
+ "modified_by": "Administrator",
+ "module": "Lis Reports",
+ "name": "physical_check",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

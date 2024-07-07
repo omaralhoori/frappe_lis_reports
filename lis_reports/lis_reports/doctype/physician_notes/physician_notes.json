@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-06 04:12:53.844838",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gen_med_eval",
+  "phys_note"
+ ],
+ "fields": [
+  {
+   "fieldname": "gen_med_eval",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "General Medical Evaluation - \u0627\u0644\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0637\u0628\u064a \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a",
+   "options": "\nMedically Fit\nMedically Unfit"
+  },
+  {
+   "fieldname": "phys_note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Note"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-06 04:12:53.844838",
+ "modified_by": "Administrator",
+ "module": "Lis Reports",
+ "name": "physician_notes",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
