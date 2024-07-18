@@ -14,7 +14,7 @@
   "med_form",
   "p_name",
   "column_break_6",
-  "p_dob",
+  "dob_test",
   "column_break_8",
   "p_s",
   "column_break_10",
@@ -92,11 +92,13 @@
    "label": "Medical Examination Form - \u0646\u0645\u0648\u0630\u062c \u0641\u062d\u0635 \u0637\u0628\u064a"
   },
   {
+   "fetch_from": "doc.patient_name",
    "fieldname": "p_name",
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Name - \u0627\u0644\u0625\u0633\u0645",
+   "no_copy": 1,
    "options": "Patient"
   },
   {
@@ -106,24 +108,20 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "in_list_view": 1,
    "label": "Serial Number",
    "options": "CTN-.YYYY.-",
    "reqd": 1
-  },
-  {
-   "fieldname": "p_dob",
-   "fieldtype": "Date",
-   "label": "DOB - \u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0648\u0644\u0627\u062f\u0629"
   },
   {
    "fieldname": "column_break_8",
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "p_name.sex",
    "fieldname": "p_s",
    "fieldtype": "Link",
    "label": "Sex - \u0627\u0644\u062c\u0646\u0633",
+   "no_copy": 1,
    "options": "Gender"
   },
   {
@@ -133,7 +131,8 @@
   {
    "fieldname": "p_age",
    "fieldtype": "Int",
-   "label": "Age - \u0627\u0644\u0639\u0645\u0631 "
+   "label": "Age - \u0627\u0644\u0639\u0645\u0631 ",
+   "no_copy": 1
   },
   {
    "fieldname": "section_break_12",
@@ -186,7 +185,7 @@
   },
   {
    "fieldname": "area_of_work",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Area of Work - \u0645\u062c\u0627\u0644 \u0627\u0644\u0639\u0645\u0644"
   },
   {
@@ -203,10 +202,11 @@
    "fieldtype": "Section Break"
   },
   {
+   "bold": 1,
    "default": "0",
    "fieldname": "test_purpose",
-   "fieldtype": "Check",
-   "label": "Test Purpose"
+   "fieldtype": "Heading",
+   "label": "Test Purpose:"
   },
   {
    "fieldname": "column_break_28",
@@ -378,11 +378,18 @@
    "fieldname": "physician_name_head",
    "fieldtype": "Heading",
    "label": "Physician Name - \u0627\u0633\u0645 \u0627\u0644\u0637\u0628\u064a\u0628"
+  },
+  {
+   "fetch_from": "p_name.dob",
+   "fieldname": "dob_test",
+   "fieldtype": "Date",
+   "label": "DOB - \u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0648\u0644\u0627\u062f\u0629",
+   "no_copy": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-07 20:16:26.447149",
+ "modified": "2024-07-14 11:24:16.788573",
  "modified_by": "Administrator",
  "module": "Lis Reports",
  "name": "Medical Examination Template",
